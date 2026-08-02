@@ -1,8 +1,8 @@
-# Problem Statement: Government Tax Collection System using Spring XML Configuration and Inversion of Control (IoC)
+# Problem Statement: Tax Collection System using Spring XML Configuration and Inversion of Control (IoC)
 
 ## Objective
 
-Develop a **Government Tax Collection System** using the **Spring Framework (XML-based configuration)** by implementing the concept of **Inversion of Control (IoC)** and **Dependency Injection (DI)**. The application should allow citizens to pay either **Income Tax** or **Property Tax**, calculate the applicable tax based on the taxable amount, and ensure that a tax can only be paid once.
+Develop a **Tax Collection System** using the **Spring Framework (XML-based configuration)** by implementing the concept of **Inversion of Control (IoC)** and **Dependency Injection (DI)**. The application should allow citizens to pay either **Income Tax** or **Property Tax**, calculate the applicable tax based on the taxable amount, and ensure that a tax can only be paid once.
 
 ---
 
