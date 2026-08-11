@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="normalTyre" class="com.example.CarDealerShip.NormalTyre"></bean>
+	<bean id="heavyTyre" class="com.example.CarDealerShip.HeavyTyre"></bean>
+	<bean id="sportsTyre" class="com.example.CarDealerShip.SportsTyre"></bean>
+	
+	<bean id="familyCarWithNormalTyre" class="com.example.CarDealerShip.FamilyCar">
+		<property name="tyre" ref="normalTyre"></property>
+	</bean>
+	
+	<bean id="familyCarWithSportsTyre" class="com.example.CarDealerShip.FamilyCar">
+		<property name="tyre" ref="sportsTyre"></property>
+	</bean>
+	
+	<bean id="sportsCar" class="com.example.CarDealerShip.SportCar">
+		<constructor-arg ref="sportsTyre"></constructor-arg>
+	</bean>
+	
+	<bean id="truck" class="com.example.CarDealerShip.Truck">
+		<constructor-arg ref="heavyTyre"></constructor-arg>
+	</bean>
+
+
+</beans>
