@@ -45,8 +45,6 @@ public class SimplePostApplication {
 			}
 			case 3 -> {
 				System.out.println("Exiting...");
-				context.close();
-				sc.close();
 				return;
 			}
 			default -> System.err.println("Wrong Choice!");
